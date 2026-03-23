@@ -1,0 +1,136 @@
+@font-face {
+    font-family:hell;
+    src: url(/HelveticaNowDisplay\ Regular/);
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+     font: hell;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+ 
+}
+#main{
+    width:100%;
+    height: 50px;
+    background-color: forestgreen;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    padding: 10px;
+}
+a{
+    font-size: 23.5px;
+    color:beige;
+    text-decoration: none;
+
+}
+i{
+    font-size: 23.5px;
+    color:beige;
+    cursor: pointer;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    width: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: beige;
+    font-size: 16px;
+    outline: none;
+    transition: width 0.3s ease;
+}
+
+.search-bar.active {
+    width: 200px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    border-bottom: 2px solid beige;
+}
+
+.search-bar::placeholder {
+    color: rgba(245, 245, 220, 0.7);
+}
+#mid-section{
+   width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-group{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+#mid-section h1{
+    font-size: 50px;
+    color:beige;
+    text-align: center;
+    margin: 0;
+}
+
+#mid-section p{
+    font-size: 25px;
+    color:beige;
+    text-align: center;
+    margin: 0;
+}
+
+
+.btm{
+    background-color: forestgreen;
+    color: beige;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 40px;
+    font-size: 15px;
+    margin: 0 10px;  /* Space between buttons */
+    display: inline-block;
+}
+
+input{
+    padding: 30px ;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid beige;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+    font-size: 20px;
+
+
+}
+#mid-section i{
+    position: absolute;
+    top: 43%;
+    left:33%;
+}
+button{
+    padding: 15px 65px;
+    border: none;
+    border-radius: 40px;
+    background-color: forestgreen;
+    color: beige;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 10px;
+}
+button:hover{
+    background:transparent;
+    cursor: pointer;
+    
+}
